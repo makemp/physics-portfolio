@@ -1,0 +1,6 @@
+https://inspirehep.net/authors/2555350 # dwie prace
+https://api.openalex.org/works?filter=author.id:A5050692319&per_page=200 # 52 prace, api
+https://api.semanticscholar.org/graph/v1/author/6492496/papers?fields=title,year,url,abstract&limit=999 # 38 prac, api
+https://api.crossref.org/v1/works?filter=orcid:0000-0002-0852-8761 # 4 artykuly, ap
+
+https://export.arxiv.org/api/query?search_query=au:%22Lemanski_R%22&sortBy=submittedDate&sortOrder=descending&max_results=50 # api, xmli

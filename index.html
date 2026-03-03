@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Romuald Lemański</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+  <style>
+    :root {
+      --dark-purple: #63307c;
+      --gold: #D4AF37;
+      --light-grey: #F8F9FA;
+      --text-dark: #2D3436;
+
+      /* Bulma 1.0+ Overrides - Force Light Theme */
+      --bulma-scheme-main: #FFFFFF;
+      --bulma-scheme-main-bis: #FAFAFA;
+      --bulma-scheme-main-ter: #F5F5F5;
+      --bulma-body-background-color: var(--light-grey);
+      --bulma-card-background-color: #FFFFFF;
+      --bulma-text: var(--text-dark);
+      --bulma-text-strong: #000000;
+      --bulma-title-color: var(--dark-purple);
+      --bulma-subtitle-color: #4A4A4A;
+      --bulma-link: var(--dark-purple);
+    }
+
+    body {
+      background-color: var(--light-grey);
+      font-family: 'Inter', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .navbar {
+      background-color: var(--dark-purple);
+    }
+
+    .navbar-item,
+    .navbar-link {
+      color: white !important;
+    }
+
+    .navbar-item:hover {
+      background-color: rgba(255, 255, 255, 0.1) !important;
+      color: var(--gold) !important;
+    }
+
+    .navbar-item.is-active {
+      color: var(--gold) !important;
+      font-weight: bold;
+    }
+
+    .footer {
+      background-color: var(--dark-purple);
+      color: white;
+      padding: 3rem 1.5rem 3rem;
+      margin-top: auto;
+    }
+
+    .gold-text {
+      color: var(--gold) !important;
+    }
+
+    .btn-gold {
+      background-color: var(--gold);
+      color: var(--dark-purple);
+      font-weight: bold;
+      border: none;
+    }
+
+    .btn-gold:hover {
+      background-color: #C19A2E;
+      color: var(--dark-purple);
+    }
+
+    .card {
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .section-title {
+      color: var(--dark-purple);
+      border-bottom: 2px solid var(--gold);
+      display: inline-block;
+      margin-bottom: 1.5rem;
+    }
+
+    #language-toggle {
+      cursor: pointer;
+      border: 1px solid var(--gold);
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 0.8rem;
+    }
+
+    .profile-photo {
+      border: 4px solid white;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease;
+    }
+
+    .profile-photo:hover {
+      transform: scale(1.02);
+    }
+
+    /* Mobile Navbar Adjustments */
+    @media screen and (max-width: 1023px) {
+      .navbar-menu {
+        background-color: var(--dark-purple);
+        padding: 1rem 0;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+
+      .navbar-item {
+        color: white !important;
+        text-align: center;
+        padding: 1rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .navbar-item:last-child {
+        border-bottom: none;
+      }
+
+      .navbar-burger {
+        color: white;
+      }
+
+      .navbar-burger:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="index.html">
+          <strong class="gold-text">Romuald Lemański</strong>
+        </a>
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMain">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarMain" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item nav-link" data-target="about-section" id="nav-about">About Me</a>
+          <a class="navbar-item nav-link" data-target="publications-section" id="nav-publications">Publications</a>
+        </div>
+
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div id="language-toggle" class="gold-text">EN | PL</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="mt-6 pt-5">
+    <section id="about-section" class="section content-section">
+      <div class="container">
+        <h2 class="title is-2 section-title" id="about-title">About Me</h2>
+        <div class="columns is-variable is-8 is-vcentered">
+          <div class="column is-4">
+            <figure class="image">
+              <img src="profile.jpg" alt="Romuald Lemański" class="is-rounded profile-photo">
+            </figure>
+          </div>
+          <div class="column is-8">
+            <div class="card p-5">
+              <p id="about-content" class="is-size-5"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications-section" class="section content-section is-hidden">
+      <div class="container">
+        <h2 class="title is-2 section-title" id="publications-title">Publications</h2>
+
+        <div class="field mb-6">
+          <div class="control">
+            <input class="input is-medium is-rounded" type="text" id="search-input"
+              placeholder="Search publications...">
+          </div>
+        </div>
+
+        <div id="papers-container" class="columns is-multiline"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer mt-6">
+    <div class="content has-text-centered">
+      <p>
+        <strong class="gold-text">Romuald Lemański</strong> &copy; 2026. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script src="papers.js"></script>
+  <script src="data.js"></script>
+
+  <script>
+    let currentLang = 'en';
+
+    const translations = {
+      en: {
+        navAbout: "About Me",
+        navPubs: "Publications",
+        aboutTitle: "About Me",
+        pubsTitle: "Publications",
+        published: "Published",
+        readMore: "Read Publication",
+        abstract: "Abstract",
+        summary: "About this paper",
+        searchPlaceholder: "Search by title, tags, or content..."
+      },
+      pl: {
+        navAbout: "O mnie",
+        navPubs: "Publikacje",
+        aboutTitle: "O mnie",
+        pubsTitle: "Publikacje",
+        published: "Opublikowano",
+        readMore: "Czytaj publikację",
+        abstract: "Abstrakt",
+        summary: "O tej pracy",
+        searchPlaceholder: "Szukaj po tytule, tagach lub treści..."
+      }
+    };
+
+    function setLanguage(lang) {
+      currentLang = lang;
+      document.documentElement.lang = lang;
+
+      // Update UI text
+      document.getElementById('nav-about').textContent = translations[lang].navAbout;
+      document.getElementById('nav-publications').textContent = translations[lang].navPubs;
+      document.getElementById('about-title').textContent = translations[lang].aboutTitle;
+      document.getElementById('publications-title').textContent = translations[lang].pubsTitle;
+      document.getElementById('search-input').placeholder = translations[lang].searchPlaceholder;
+
+      // Update About Me content
+      document.getElementById('about-content').textContent = aboutMeData[lang];
+
+      // Render papers
+      renderPapers();
+    }
+
+    function renderPapers() {
+      const container = document.getElementById('papers-container');
+      const searchQuery = document.getElementById('search-input').value.toLowerCase();
+      container.innerHTML = '';
+
+      const filteredPapers = papersData.filter(paper => {
+        const title = paper.title.toLowerCase();
+        const abstract = paper.abstract.toLowerCase();
+        const tags = paper.tags.toLowerCase();
+        const aboutText = (currentLang === 'pl' ? paper.polish_about : paper.english_about).toLowerCase();
+
+        return title.includes(searchQuery) ||
+          abstract.includes(searchQuery) ||
+          tags.includes(searchQuery) ||
+          aboutText.includes(searchQuery);
+      });
+
+      filteredPapers.forEach(paper => {
+        const dateObj = new Date(paper.created_at);
+        const formattedDate = dateObj.toLocaleDateString(currentLang === 'pl' ? 'pl-PL' : 'en-US');
+        const aboutText = currentLang === 'pl' ? paper.polish_about : paper.english_about;
+
+        const tagsHtml = paper.tags.split(',')
+          .map(tag => `<span class="tag is-light">${tag.trim()}</span>`)
+          .join('');
+
+        const cardHTML = `
+                    <div class="column is-12">
+                        <div class="card mb-4">
+                            <div class="card-content">
+                                <div class="columns is-vcentered">
+                                    <div class="column is-9">
+                                        <p class="title is-4 mb-2" style="color: var(--dark-purple);">${paper.title}</p>
+                                      <!---  <p class="subtitle is-6 has-text-grey mb-3">${translations[currentLang].published}: ${formattedDate}</p> -->
+                                        <div class="tags mb-3">${tagsHtml}</div>
+                                        <p class="is-size-6 italic mb-4"><strong>${translations[currentLang].summary}:</strong> ${aboutText}</p>
+                                        <details class="mb-4">
+                                            <summary class="is-clickable has-text-link"><strong>${translations[currentLang].abstract}</strong></summary>
+                                            <p class="mt-2 has-text-grey">${paper.abstract}</p>
+                                        </details>
+                                    </div>
+                                    <div class="column is-3 has-text-centered">
+                                        <a href="${paper.url}" target="_blank" class="button btn-gold is-fullwidth">${translations[currentLang].readMore}</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+        container.innerHTML += cardHTML;
+      });
+    }
+
+    // Search logic
+    document.getElementById('search-input').addEventListener('input', renderPapers);
+
+    // Navigation logic
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = e.target.getAttribute('data-target');
+
+        document.querySelectorAll('.content-section').forEach(section => {
+          section.classList.add('is-hidden');
+        });
+        document.getElementById(targetId).classList.remove('is-hidden');
+
+        document.querySelectorAll('.nav-link').forEach(nav => nav.classList.remove('is-active'));
+        e.target.classList.add('is-active');
+      });
+    });
+
+    // Language toggle logic
+    document.getElementById('language-toggle').addEventListener('click', () => {
+      setLanguage(currentLang === 'en' ? 'pl' : 'en');
+    });
+
+    // Mobile burger menu
+    document.querySelector('.navbar-burger').addEventListener('click', function () {
+      this.classList.toggle('is-active');
+      document.getElementById('navbarMain').classList.toggle('is-active');
+    });
+
+    // Initialize with browser language or English
+    const browserLang = navigator.language.startsWith('pl') ? 'pl' : 'en';
+    setLanguage(browserLang);
+    document.getElementById('nav-about').classList.add('is-active');
+  </script>
+</body>
+
+</html>
