@@ -289,6 +289,22 @@
           .map(tag => `<span class="tag is-light">${tag.trim()}</span>`)
           .join('');
 
+        const isExternal = paper.url.startsWith('http://') || paper.url.startsWith('https://') || paper.url.startsWith('//');
+        let paperUrl = paper.url;
+        if (!isExternal && paper.url) {
+          let basePath = window.location.origin + window.location.pathname;
+          if (!basePath.endsWith('/')) {
+            const lastSlash = basePath.lastIndexOf('/');
+            const lastPart = basePath.substring(lastSlash + 1);
+            if (lastPart.includes('.')) {
+              basePath = basePath.substring(0, lastSlash + 1);
+            } else {
+              basePath += '/';
+            }
+          }
+          paperUrl = new URL(paper.url, basePath).href;
+        }
+
         const cardHTML = `
                     <div class="column is-12">
                         <div class="card mb-4">
@@ -305,7 +321,7 @@
                                         </details>
                                     </div>
                                     <div class="column is-3 has-text-centered">
-                                        <a href="${paper.url}" target="_blank" class="button btn-gold is-fullwidth">${translations[currentLang].readMore}</a>
+                                        <a href="${paperUrl}" target="_blank" class="button btn-gold is-fullwidth">${translations[currentLang].readMore}</a>
                                     </div>
                                 </div>
                             </div>
