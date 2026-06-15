@@ -335,6 +335,20 @@
     // Search logic
     document.getElementById('search-input').addEventListener('input', renderPapers);
 
+    // Mobile burger menu and helper functions
+    const burger = document.querySelector('.navbar-burger');
+    const navMenu = document.getElementById('navbarMain');
+
+    function closeMenu() {
+      burger.classList.remove('is-active');
+      navMenu.classList.remove('is-active');
+    }
+
+    burger.addEventListener('click', function () {
+      this.classList.toggle('is-active');
+      navMenu.classList.toggle('is-active');
+    });
+
     // Navigation logic
     document.querySelectorAll('.nav-link').forEach(link => {
       link.addEventListener('click', (e) => {
@@ -348,18 +362,15 @@
 
         document.querySelectorAll('.nav-link').forEach(nav => nav.classList.remove('is-active'));
         e.target.classList.add('is-active');
+        
+        closeMenu();
       });
     });
 
     // Language toggle logic
     document.getElementById('language-toggle').addEventListener('click', () => {
       setLanguage(currentLang === 'en' ? 'pl' : 'en');
-    });
-
-    // Mobile burger menu
-    document.querySelector('.navbar-burger').addEventListener('click', function () {
-      this.classList.toggle('is-active');
-      document.getElementById('navbarMain').classList.toggle('is-active');
+      closeMenu();
     });
 
     // Initialize with browser language or English
