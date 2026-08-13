@@ -7,7 +7,12 @@ const papersData = [
         "polish_about": "Opracowanie szybszych algorytmów komputerowych do symulacji kwantowego zachowania cząsteczek magnetycznych stosowanych w nanotechnologii.",
         "tags": "Algorithms, Hubbard Model, HPC, Molecular Magnetism",
         "created_at": "2023-10-11T00:00:00Z",
-        "url": "https://onlinelibrary.wiley.com/doi/10.1002/cpe.7931"
+        "url": "https://onlinelibrary.wiley.com/doi/10.1002/cpe.7931",
+        "coauthors": [
+            "M. Antkowiak",
+            "Ł. Kucharski",
+            "G. Kamieniarz"
+        ]
     },
     {
         "title": "Description of Magnetic Nanomolecules by the Extended Multi-orbital Hubbard Model: Perturbative vs Numerical Approach",
@@ -17,7 +22,10 @@ const papersData = [
         "polish_about": "Badania nad właściwościami magnetycznymi małych struktur molekularnych przy użyciu dwóch różnych podejść fizyki obliczeniowej: metod przybliżonych oraz obliczeń dokładnych.",
         "tags": "Magnetic Nanomolecules, Hubbard Model, Computational Physics",
         "created_at": "2023-04-26T09:02:52Z",
-        "url": "https://link.springer.com/chapter/10.1007/978-3-031-30445-3_32"
+        "url": "https://link.springer.com/chapter/10.1007/978-3-031-30445-3_32",
+        "coauthors": [
+            "Michał Antkowiak"
+        ]
     },
     {
         "title": "Description of molecular nanomagnets by the multiorbital Hubbard model with correlated hopping",
@@ -27,7 +35,10 @@ const papersData = [
         "polish_about": "Badanie nad tym, jak elektrony „przeskakują” między orbitalami w molekułach magnetycznych i jak ten ruch wpływa na całkowitą moment magnetyczny molekuły.",
         "tags": "Molecular Nanomagnets, Hubbard Model, Correlated Hopping",
         "created_at": "2021-07-29T14:14:46Z",
-        "url": "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.104.014431"
+        "url": "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.104.014431",
+        "coauthors": [
+            "J. Matysiak"
+        ]
     },
     {
         "title": "Extended Falicov–Kimball model: Hartree–Fock vs DMFT approach",
@@ -37,7 +48,11 @@ const papersData = [
         "polish_about": "Porównanie dwóch metod matematycznych stosowanych do przewidywania rodzaju uporządkowania się elektronów w kryształach, pokazujące kiedy sprawdza się metoda przybliżona, a kiedy ona zawodzi w zestawieniu z metodą dokładną.",
         "tags": "Hartree–Fock, DMFT, Falicov–Kimball Model, Condensed Matter Physics",
         "created_at": "2020-07-27T22:22:04Z",
-        "url": "https://iopscience.iop.org/article/10.1088/1361-648X/aba981"
+        "url": "https://iopscience.iop.org/article/10.1088/1361-648X/aba981",
+        "coauthors": [
+            "Konrad Jerzy Kapcia",
+            "Marcin Jakub Zygmunt"
+        ]
     },
     {
         "title": "Extended Falicov-Kimball model at weak on site and inter site Coulomb interactions",
@@ -47,7 +62,11 @@ const papersData = [
         "polish_about": "Badanie modelu Falicova-Kimballa analizujące zachowanie elektronów, gdy oddziaływania kulombowskie zarówno na węźle, jak i międzywęzłowe są słabe.",
         "tags": "Falicov-Kimball Model, Coulomb Interactions, Condensed Matter Physics",
         "created_at": "2020-01-01T00:00:00Z",
-        "url": "https://icmp.lviv.ua/journal/zbirnyk.104/43706/art43706.pdf"
+        "url": "https://icmp.lviv.ua/journal/zbirnyk.104/43706/art43706.pdf",
+        "coauthors": [
+            "K.J. Kapcia",
+            "J. Krawczyk"
+        ]
     },
     {
         "title": "Erratum: Extended Falicov-Kimball model: Exact solution for finite temperatures [Phys. Rev. B 99,245143 (2019)]",
@@ -57,7 +76,11 @@ const papersData = [
         "polish_about": "Formalna aktualizacja i korekta do badania teoretycznego dotyczącego modelu Falicova-Kimballa w temperaturach powyżej zera bezwzględnego.",
         "tags": "Erratum, Falicov-Kimball Model, Finite Temperature Physics",
         "created_at": "2020-06-23T18:25:30Z",
-        "url": "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.101.239901"
+        "url": "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.101.239901",
+        "coauthors": [
+            "Konrad Jerzy Kapcia",
+            "Stanisław Robaszkiewicz"
+        ]
     },
     {
         "title": "Extended Falicov-Kimball model: Exact solution for finite temperatures",
@@ -67,7 +90,11 @@ const papersData = [
         "polish_about": "Praca ta dowodzi, że konkretny typ materiału izolacyjnego może zacząć zachowywać się jak przewodnik, nawet jeśli temperatura zostanie podniesiona o bardzo niewielką wartość.",
         "tags": "Phase Diagram, Ground State, Metal-Insulator Transition, Theoretical Physics",
         "created_at": "2017-01-01T00:00:00Z",
-        "url": "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.99.245143"
+        "url": "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.99.245143",
+        "coauthors": [
+            "Konrad Jerzy Kapcia",
+            "Stanisław Robaszkiewicz"
+        ]
     },
     {
         "title": "Two-orbital Hubbard model vs spin S=1 Heisenberg model: studies on clusters",
@@ -77,7 +104,10 @@ const papersData = [
         "polish_about": "Porównanie dwóch fundamentalnych modeli matematycznych magnetyzmu, aby sprawdzić kiedy jeden może zastąpić drugim, zwracając szczególną uwagę na to, jak elektrony „przeskakują” między różnymi orbitalami.",
         "tags": "Hubbard Model, Heisenberg Model, Numerical Physics, Atomic Clusters",
         "created_at": "2018-09-25T13:45:07Z",
-        "url": "https://icmp.lviv.ua/journal/zbirnyk.95/33301/art33301.pdf"
+        "url": "https://icmp.lviv.ua/journal/zbirnyk.95/33301/art33301.pdf",
+        "coauthors": [
+            "J. Matysiak"
+        ]
     },
     {
         "title": "Peculiar Thermodynamic Properties of the Falicov-Kimball Model for small U Couplings",
@@ -87,7 +117,10 @@ const papersData = [
         "polish_about": "Odkryto, że gdy oddziaływania elektronowe są słabe, ciepło właściwe materiału opisanego prostym modelem kwantowym zmienia się w bardzo dziwny i nieoczekiwany sposób wraz ze zmianą temperatury.",
         "tags": "Thermodynamics, Bethe Lattice, Specific Heat, DMFT",
         "created_at": "2018-01-01T00:00:00Z",
-        "url": "http://przyrbwn.icm.edu.pl/APP/PDF/133/app133z3p010.pdf"
+        "url": "http://przyrbwn.icm.edu.pl/APP/PDF/133/app133z3p010.pdf",
+        "coauthors": [
+            "J. Krawczyk"
+        ]
     },
     {
         "title": "Comparison of the Multi-Band Hubbard and Heisenberg Models on Small Finite Clusters",
@@ -97,7 +130,10 @@ const papersData = [
         "polish_about": "W badaniu tym analizowano małe grupy atomów, aby sprawdzić, które wzory matematyczne najlepiej opisują ich właściwości magnetyczne.",
         "tags": "Hubbard Model, Heisenberg Model, Atomic Clusters, Numerical Physics",
         "created_at": "2018-01-01T00:00:00Z",
-        "url": "http://przyrbwn.icm.edu.pl/APP/PDF/133/app133z3p020.pdf"
+        "url": "http://przyrbwn.icm.edu.pl/APP/PDF/133/app133z3p020.pdf",
+        "coauthors": [
+            "J. Matysiak"
+        ]
     },
     {
         "title": "Extended Falicov-Kimball model: Exact solution for the ground state",
@@ -107,7 +143,11 @@ const papersData = [
         "polish_about": "Określenie stanu stabilnego elektronów w temperaturze zera bezwzględnego w złożonych modelach oddziaływujących elektronów.",
         "tags": "Ground State, Hartree-Fock, DMFT, Phase Diagram",
         "created_at": "2017-11-01T00:00:00Z",
-        "url": "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.96.205102"
+        "url": "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.96.205102",
+        "coauthors": [
+            "Konrad Jerzy Kapcia",
+            "Stanisław Robaszkiewicz"
+        ]
     },
     {
         "title": "Analysis of the Finite-Temperature Phase Diagram of the Spinless Falicov-Kimball Model",
@@ -127,7 +167,12 @@ const papersData = [
         "polish_about": "Badania te przenoszą złożone symulacje atomowe na prostszy model, aby wyjaśnić magnetyczną „mapę” nowopowstałej cząsteczki chromu w kształcie pierścienia.",
         "tags": "DFT, Molecular Ring, Magnetic Moments, Chromium Molecule",
         "created_at": "2015-01-01T00:00:00Z",
-        "url": "http://przyrbwn.icm.edu.pl/APP/PDF/127/a127z2p080.pdf"
+        "url": "http://przyrbwn.icm.edu.pl/APP/PDF/127/a127z2p080.pdf",
+        "coauthors": [
+            "M. Wojciechowski",
+            "B. Brzostowski",
+            "G. Kamieniarz"
+        ]
     },
     {
         "title": "Gapless metallic charge-density-wave phase driven by strong electron correlations",
@@ -137,7 +182,10 @@ const papersData = [
         "polish_about": "Pokazano jak silne korelacje elektronowe mogą zmienić materiał przewodzący w nieprzewodzący.",
         "tags": "DMFT, Bethe Lattice, Metal-Insulator Transition, Quantum Mechanics",
         "created_at": "2014-02-04T00:00:00Z",
-        "url": "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.89.075104"
+        "url": "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.89.075104",
+        "coauthors": [
+            "Klaus Ziegler"
+        ]
     },
     {
         "title": "DFT and Falicov-Kimball model approach to Cr9 molecular ring",
@@ -147,7 +195,15 @@ const papersData = [
         "polish_about": "Badanie analizuje nanostrukturę złożoną z 9 atomów chromu, aby zrozumieć, jak oddziałuje ona z polami magnetycznymi, wykorzystując zarówno zaawansowaną teorię, jak i symulacje numeryczne.",
         "tags": "DFT, Nanometallic Rings, Chromium, Magnetic Properties",
         "created_at": "2014-01-01T00:00:00Z",
-        "url": "http://przyrbwn.icm.edu.pl/APP/PDF/126/a126z1p130.pdf"
+        "url": "http://przyrbwn.icm.edu.pl/APP/PDF/126/a126z1p130.pdf",
+        "coauthors": [
+            "B. Brzostowski",
+            "M. Wojciechowski",
+            "G. Kamieniarz",
+            "G.A. Timco",
+            "F. Tuna",
+            "R.E.P. Winpenny"
+        ]
     },
     {
         "title": "Chromium-based rings within the DFT and Falicov–Kimball model approach",
@@ -157,7 +213,13 @@ const papersData = [
         "polish_about": "Badanie organizacji elektronicznej struktur molekularnych opartych na chromie przy użyciu modelu Falicova-Kimballa.",
         "tags": "Chromium Rings, DFT, Falicov–Kimball, Nanotechnology",
         "created_at": "2013-01-01T00:00:00Z",
-        "url": "https://link.springer.com/article/10.1007/s11051-013-1528-2"
+        "url": "https://link.springer.com/article/10.1007/s11051-013-1528-2",
+        "coauthors": [
+            "B. Brzostowski",
+            "T. Ślusarski",
+            "D. Tomecka",
+            "G. Kamieniarz"
+        ]
     },
     {
         "title": "Momentum distribution and ordering in mixtures of ultracold light- and heavy-fermion atoms",
@@ -167,7 +229,12 @@ const papersData = [
         "polish_about": "Wykorzystano model komputerowy, aby pokazać, jak mieszanie lekkich i ciężkich atomów w siatce laserowej może tworzyć określone struktury, które mogłyby służyć jako precyzyjne termometry w laboratoriach ultra niskich temperatur.",
         "tags": "Ultracold Atoms, Momentum Distribution, Optical Lattice, Thermometry",
         "created_at": "2011-01-01T00:00:00Z",
-        "url": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.83.063631"
+        "url": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.83.063631",
+        "coauthors": [
+            "M.M. Maśka",
+            "C.J. Williams",
+            "J.K. Freericks"
+        ]
     },
     {
         "title": "Energy spectrum analysis and finite temperature properties of the Falicov-Kimball model with Hund coupling at half filling",
@@ -177,7 +244,10 @@ const papersData = [
         "polish_about": "Szczegółowa analiza energetyczna modelu kwantowego w celu zrozumienia, jak magnetyzm pojawia się w różnych temperaturach.",
         "tags": "Energy Spectrum, Hund Coupling, Falicov-Kimball Model, Thermodynamics",
         "created_at": "2010-01-01T00:00:00Z",
-        "url": "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.82.195118"
+        "url": "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.82.195118",
+        "coauthors": [
+            "Jakub Wrzodak"
+        ]
     },
     {
         "title": "Erratum: Improving the efficiency of ultracold dipolar molecule formation by first loading onto an optical lattice",
@@ -187,7 +257,15 @@ const papersData = [
         "polish_about": "Techniczna korekta do wcześniejszej pracy na temat tworzenia cząsteczek w ekstremalnie niskich temperaturach.",
         "tags": "Erratum, Optical Lattice, Ultracold Atoms, Molecular Formation",
         "created_at": "2010-09-08T00:00:00Z",
-        "url": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.82.039901"
+        "url": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.82.039901",
+        "coauthors": [
+            "J.K. Freericks",
+            "M.M. Maśka",
+            "Anzi Hu",
+            "Thomas M. Hanna",
+            "C.J. Williams",
+            "P.S. Julienne"
+        ]
     },
     {
         "title": "Improving the efficiency of ultracold dipolar molecule formation by first loading onto an optical lattice",
@@ -197,7 +275,15 @@ const papersData = [
         "polish_about": "Praca ta proponuje sprytny sposób wykorzystania światła laserowego do układania atomów jak jajka w wytłaczance ze zwiększoną skutecznością tworzenia złożonych cząsteczek.",
         "tags": "Dipolar Molecules, Optical Lattice, Quantum Efficiency, Atomic Physics",
         "created_at": "2009-08-12T20:17:54Z",
-        "url": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.81.011605"
+        "url": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.81.011605",
+        "coauthors": [
+            "J.K. Freericks",
+            "M.M. Maśka",
+            "Anzi Hu",
+            "Thomas M. Hanna",
+            "C.J. Williams",
+            "P.S. Julienne"
+        ]
     },
     {
         "title": "One-Electron Excitations vs. Collective Excitations in the 1D Falicov-Kimball Model with Hund Coupling at Half Filling",
@@ -207,7 +293,10 @@ const papersData = [
         "polish_about": "Badanie pokazuje, że w strukturach pierścieniowych 1D atomy mają tendencję do wspólnego ruchu w „grupach” (działanie zbiorowe), a nie indywidualnie, gdy dodawana jest energia w niskich temperaturach.",
         "tags": "1D Rings, Collective Excitations, Hund Coupling, Fermi Levels",
         "created_at": "2010-01-01T00:00:00Z",
-        "url": "http://przyrbwn.icm.edu.pl/APP/PDF/118/a118z2p35.pdf"
+        "url": "http://przyrbwn.icm.edu.pl/APP/PDF/118/a118z2p35.pdf",
+        "coauthors": [
+            "J. Wrzodak"
+        ]
     },
     {
         "title": "Relationships between electron band filling and type of charge and magnetic order",
@@ -217,7 +306,10 @@ const papersData = [
         "polish_about": "Badanie tego, jak liczba elektronów w pasmach energetycznych materiału determinuje jego zachowanie magnetyczne.",
         "tags": "Electron Band, Magnetic Order, Charge Order",
         "created_at": "2009-01-01T00:00:00Z",
-        "url": "https://doi.org/10.30970/jps.13.4701"
+        "url": "https://doi.org/10.30970/jps.13.4701",
+        "coauthors": [
+            "J. Wrzodak"
+        ]
     },
     {
         "title": "Ground-state phase diagrams of the generalized Falicov-Kimball model with Hund coupling",
@@ -227,7 +319,10 @@ const papersData = [
         "polish_about": "Tworzenie mapy tego, jak elektrony układają się na podstawie ich spinu i ładunku na prostych sieciach krystalicznych.",
         "tags": "Hund Coupling, Phase Diagram, Ground State, Charge Ordering",
         "created_at": "2008-08-14T00:00:00Z",
-        "url": "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.78.085118"
+        "url": "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.78.085118",
+        "coauthors": [
+            "Jakub Wrzodak"
+        ]
     },
     {
         "title": "Pattern Formation in Mixtures of Ultracold Atoms in Optical Lattices",
@@ -237,7 +332,12 @@ const papersData = [
         "polish_about": "Proponowanie eksperymentów z wykorzystaniem ekstremalnie zimnych atomów w celu zbadania, jak w naturze tworzą się złożone struktury.",
         "tags": "Ultracold Atoms, Pattern Formation, Optical Lattices, Quantum Emulsions",
         "created_at": "2008-08-07T00:00:00Z",
-        "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.101.060404"
+        "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.101.060404",
+        "coauthors": [
+            "M. Maśka",
+            "J. Freericks",
+            "C. Williams"
+        ]
     },
     {
         "title": "Model of magnetic and charge superstructures in itinerant electron systems",
@@ -287,7 +387,10 @@ const papersData = [
         "polish_about": "Badanie tego, jak przyciąganie i odpychanie między jonami w układzie jednowymiarowym zmienia ogólny stan materiału.",
         "tags": "Inter-Ion Interactions, 1D Systems, Phase Diagrams, Falicov–Kimball Model",
         "created_at": "2004-01-01T00:00:00Z",
-        "url": "https://www.sciencedirect.com/science/article/abs/pii/S0304885303020900?via%3Dihub"
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S0304885303020900?via%3Dihub",
+        "coauthors": [
+            "Z. Gajek"
+        ]
     },
     {
         "title": "Charge Stripes Due to Electron Correlations in the Two-Dimensional Spinless Falicov–Kimball Model",
@@ -297,7 +400,11 @@ const papersData = [
         "polish_about": "Badanie organizacji ładunku w modelu bezspinowym wynikające z silnych oddziaływań między elektronami.",
         "tags": "Charge Stripes, Electron Correlations, Statistical Physics, Square Lattice",
         "created_at": "2004-08-01T00:00:00Z",
-        "url": "https://link.springer.com/article/10.1023/B:JOSS.0000037213.25834.33"
+        "url": "https://link.springer.com/article/10.1023/B:JOSS.0000037213.25834.33",
+        "coauthors": [
+            "J.K. Freericks",
+            "G. Banach"
+        ]
     },
     {
         "title": "Ground states of the spin‐1/2 Falicov–Kimball model",
@@ -307,7 +414,10 @@ const papersData = [
         "polish_about": "Wykazano, że różne modele fizyczne mogą prowadzić do takich samych rozkładów elektronów na sieciach krystalicznych 2D.",
         "tags": "Ground State, Spin-1/2, 2D Lattice, Phase Diagram",
         "created_at": "2003-03-01T00:00:00Z",
-        "url": "https://onlinelibrary.wiley.com/doi/10.1002/pssb.200301691"
+        "url": "https://onlinelibrary.wiley.com/doi/10.1002/pssb.200301691",
+        "coauthors": [
+            "J. Wojtkiewicz"
+        ]
     },
     {
         "title": "Doping induced transition from an antiferro-type order to phase separation",
@@ -317,7 +427,10 @@ const papersData = [
         "polish_about": "Badanie pokazujące, jak dodanie nośników ładunku do materiału może zniszczyć jego uporządkowanie magnetyczne i spowodować rozdzielenie na oddzielne fazy.",
         "tags": "Doping, Phase Separation, Antiferromagnetic Order, Falicov-Kimball Model",
         "created_at": "2003-01-01T00:00:00Z",
-        "url": "https://www.actaphys.uj.edu.pl/fulltext?series=Reg&vol=34&page=807"
+        "url": "https://www.actaphys.uj.edu.pl/fulltext?series=Reg&vol=34&page=807",
+        "coauthors": [
+            "Z. Gajek"
+        ]
     },
     {
         "title": "Stripe Phases in the Two-Dimensional Falicov-Kimball Model",
@@ -327,7 +440,11 @@ const papersData = [
         "polish_about": "Badanie tego, jak ładunek elektryczny tworzy wzory „paskowe” w materiałach dwuwymiarowych.",
         "tags": "Stripe Phases, Falicov-Kimball Model, Phase Diagram",
         "created_at": "2002-10-21T00:00:00Z",
-        "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.89.196403"
+        "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.89.196403",
+        "coauthors": [
+            "J.K. Freericks",
+            "G. Banach"
+        ]
     },
     {
         "title": "Correlated hopping in the 1DFalicov-Kimball model",
@@ -337,7 +454,10 @@ const papersData = [
         "polish_about": "Praca pokazuje, że w łańcuchu 1D ruch elektronów nie jest identyczny z ruchem „dziur”, co łamie symetrię występującą w prostszych modelach.",
         "tags": "1D FKM, Correlated Hopping, Symmetry Breaking, Phase Diagram",
         "created_at": "2001-01-01T00:00:00Z",
-        "url": "https://www.actaphys.uj.edu.pl/fulltext?series=Reg&vol=32&page=3473"
+        "url": "https://www.actaphys.uj.edu.pl/fulltext?series=Reg&vol=32&page=3473",
+        "coauthors": [
+            "Z. Gajek"
+        ]
     },
     {
         "title": "2D Falicov--Kimball Model with Correlated Hopping in the Large U Limit",
@@ -347,7 +467,10 @@ const papersData = [
         "polish_about": "Teoretyczne badanie tego, jak zmienia się ruch elektronów, gdy odpychanie między nimi jest ekstremalnie silne w materiale dwuwymiarowym.",
         "tags": "2D FKM, Large U Limit, Correlated Hopping",
         "created_at": "2001-01-01T00:00:00Z",
-        "url": "https://www.actaphys.uj.edu.pl/fulltext?series=Reg&vol=32&page=3467"
+        "url": "https://www.actaphys.uj.edu.pl/fulltext?series=Reg&vol=32&page=3467",
+        "coauthors": [
+            "J. Wojtkiewicz"
+        ]
     },
     {
         "title": "Falicov--Kimball Models of Collective Phenomena in Solids (A Concise Guide)",
@@ -357,7 +480,10 @@ const papersData = [
         "polish_about": "Zwięzły przewodnik dla fizyków wyjaśniający, jak model Falicova-Kimballa opisuje zachowania grupowe elektronów w ciałach stałych.",
         "tags": "Collective Phenomena, Falicov-Kimball Model, Solid State",
         "created_at": "2001-10-01T00:00:00Z",
-        "url": "https://www.actaphys.uj.edu.pl/fulltext?series=Reg&vol=32&page=3243"
+        "url": "https://www.actaphys.uj.edu.pl/fulltext?series=Reg&vol=32&page=3243",
+        "coauthors": [
+            "Janusz Jędrzejewski"
+        ]
     },
     {
         "title": "Ground states of the Falicov-Kimball model with correlated hopping",
@@ -367,7 +493,10 @@ const papersData = [
         "polish_about": "Używając nowego podejścia matematycznego, odkryto nieznany wcześniej „stan uporządkowany”, w którym cząstki układają się w bardzo specyficzny wzór.",
         "tags": "Ground State, Correlated Hopping, Perturbation Theory",
         "created_at": "2001-01-01T00:00:00Z",
-        "url": "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.64.233103"
+        "url": "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.64.233103",
+        "coauthors": [
+            "J. Wojtkiewicz"
+        ]
     },
     {
         "title": "Exact solution of the multicomponent Falicov-Kimball model in infinite dimensions",
@@ -377,7 +506,12 @@ const papersData = [
         "polish_about": "Badania te dostarczają obszernej odpowiedzi na pytanie, jak różne rodzaje elektronów mieszają się ze sobą w metalach ciężkich, takich jak np. związki oparte na iterbie.",
         "tags": "Exact Solution, Multicomponent Hybridization, Heavy Fermions",
         "created_at": "2001-01-01T00:00:00Z",
-        "url": "https://www.tandfonline.com/doi/abs/10.1080/13642810110066470"
+        "url": "https://www.tandfonline.com/doi/abs/10.1080/13642810110066470",
+        "coauthors": [
+            "V. Zlatić",
+            "J.K. Freericks",
+            "G. Czycholl"
+        ]
     },
     {
         "title": "Segregation and charge-density-wave order in the spinless Falicov-Kimball model",
@@ -387,7 +521,10 @@ const papersData = [
         "polish_about": "Badania te określają, kiedy elektrony separują się, a kiedy wybierają tworzenie regularnych struktur paskowych i pokazują jak silne odpychanie zmienia te reguły.",
         "tags": "Segregation, Charge-Density-Wave, Phase Diagram, Bethe Lattice",
         "created_at": "1999-12-10T15:56:37Z",
-        "url": "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.61.13438"
+        "url": "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.61.13438",
+        "coauthors": [
+            "J.K. Freericks"
+        ]
     },
     {
         "title": "Magnetism of actinide compounds",
@@ -397,7 +534,11 @@ const papersData = [
         "polish_about": "Obszerny przegląd własności magnetycznych aktynowców (takich jak uran czy pluton) oraz ich różnych związków chemicznych.",
         "tags": "Actinides, Magnetism, Material Science",
         "created_at": "1999-01-01T00:00:00Z",
-        "url": "https://www.tandfonline.com/doi/abs/10.1080/000187399243419"
+        "url": "https://www.tandfonline.com/doi/abs/10.1080/000187399243419",
+        "coauthors": [
+            "P. Santini",
+            "Paul Erdős"
+        ]
     },
     {
         "title": "Canonical phase diagrams of the1D Falicov-Kimball model at T = 0",
@@ -407,7 +548,11 @@ const papersData = [
         "polish_about": "Ścisłe odwzorowanie faz konkretnego modelu atomowego, aby zobaczyć, jak zmieniają się stany stabilne w miarę dodawania do układu kolejnych elektronów.",
         "tags": "Canonical Ensemble, 1D Model, Phase Diagram, Ground State",
         "created_at": "1995-01-01T00:00:00Z",
-        "url": "https://www.sciencedirect.com/science/article/abs/pii/0378437195003029?via%3Dihub"
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/0378437195003029?via%3Dihub",
+        "coauthors": [
+            "Z. Gajek",
+            "J. Jędrzejewski"
+        ]
     },
     {
         "title": "New phases and structural phase transitions in the 1-D Falicov-Kimball model at T=0",
@@ -417,7 +562,11 @@ const papersData = [
         "polish_about": "Badanie różnych sposobów, w jakie jednowymiarowy łańcuch atomów może się restrukturyzować w najniższych możliwych temperaturach.",
         "tags": "1D FKM, Phase Transitions, Ground State",
         "created_at": "1996-01-01T00:00:00Z",
-        "url": "https://www.tandfonline.com/doi/abs/10.1080/01411599608214649"
+        "url": "https://www.tandfonline.com/doi/abs/10.1080/01411599608214649",
+        "coauthors": [
+            "Z. Gajek",
+            "J. Jędrzejewski"
+        ]
     },
     {
         "title": "The asymmetric Hubbard model on a two-dimensional cluster",
@@ -427,7 +576,11 @@ const papersData = [
         "polish_about": "Badania nad tym, jak światło może pomagać elektronom przyciągać się nawzajem w małych klastrach atomowych.",
         "tags": "Hubbard Model, Electron Interaction, Clusters, Quantum Mechanics",
         "created_at": "1996-04-22T00:00:00Z",
-        "url": "https://iopscience.iop.org/article/10.1088/0953-8984/8/17/002"
+        "url": "https://iopscience.iop.org/article/10.1088/0953-8984/8/17/002",
+        "coauthors": [
+            "Zbigniew Domański",
+            "Gábor Fáth"
+        ]
     },
     {
         "title": "The ground-state phase diagram of the two-dimensional Falicov-Kimball model",
@@ -437,7 +590,10 @@ const papersData = [
         "polish_about": "Fundamentalne badania mapujące konfiguracje o najniższej energii dla atomów na sieci dwuwymiarowej.",
         "tags": "2D FKM, Phase Diagram, Ground State, Solid State Physics",
         "created_at": "1995-01-01T00:00:00Z",
-        "url": "https://iopscience.iop.org/article/10.1088/0953-8984/7/49/016"
+        "url": "https://iopscience.iop.org/article/10.1088/0953-8984/7/49/016",
+        "coauthors": [
+            "G.I. Watson"
+        ]
     },
     {
         "title": "Asymmetric Hubbard chain at half-filling",
@@ -447,7 +603,11 @@ const papersData = [
         "polish_about": "Analiza tego, jak asymetria w ruchu elektronów prowadzi do specyficznych rozkładów momentów magnetycznych w łańcuchu 1D.",
         "tags": "Hubbard Model, Neel Antiferromagnet, DMRG, Asymmetry",
         "created_at": "1995-11-15T00:00:00Z",
-        "url": "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.52.13910"
+        "url": "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.52.13910",
+        "coauthors": [
+            "Gábor Fáth",
+            "Zbigniew Domański"
+        ]
     },
     {
         "title": "Interaction between heavy electrons mediated by itinerant electrons in the asymmetric Hubbard model",
@@ -457,7 +617,11 @@ const papersData = [
         "polish_about": "Badanie tego, jak lekkie elektrony wędrowne mogą pośredniczyć w efektywnym oddziaływaniu między ciężkimi elektronami zlokalizowanymi w modelu asymetrycznym.",
         "tags": "Asymmetric Hubbard Model, Heavy Electrons, Itinerant Electrons, Magnetism",
         "created_at": "1995-01-01T00:00:00Z",
-        "url": "https://www.sciencedirect.com/science/article/abs/pii/0304885394006520?via%3Dihub"
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/0304885394006520?via%3Dihub",
+        "coauthors": [
+            "Z. Domański",
+            "P. Erdős"
+        ]
     },
     {
         "title": "Falicov-Kimball model and its relation to the Hubbard model: studies on clusters",
@@ -467,7 +631,10 @@ const papersData = [
         "polish_about": "Badanie związku między dwoma podstawowymi modelami fizycznymi poprzez analizę ich zachowania na małych klastrach atomowych.",
         "tags": "Falicov-Kimball Model, Hubbard Model, Clusters",
         "created_at": "1994-01-01T00:00:00Z",
-        "url": "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.50.11381"
+        "url": "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.50.11381",
+        "coauthors": [
+            "Zbigniew Domański"
+        ]
     },
     {
         "title": "Global structure of the Falicov-Kimball model ground state phase diagram",
@@ -477,7 +644,11 @@ const papersData = [
         "polish_about": "Kompleksowy przegląd pełnej struktury diagramu fazowego modelu Falicova-Kimballa w temperaturze zerowej.",
         "tags": "Phase Diagram, Falicov-Kimball Model, Ground State, Global Structure",
         "created_at": "1993-01-01T00:00:00Z",
-        "url": "http://przyrbwn.icm.edu.pl/APP/PDF/84/a084z2p13.pdf"
+        "url": "http://przyrbwn.icm.edu.pl/APP/PDF/84/a084z2p13.pdf",
+        "coauthors": [
+            "J. Lach",
+            "J. Jędrzejewski"
+        ]
     },
     {
         "title": "Ground-state phase diagram of the Falicov-Kimball model",
@@ -487,7 +658,11 @@ const papersData = [
         "polish_about": "Mapowanie stabilnych konfiguracji elektronów w modelu Falicova-Kimballa w temperaturze zera bezwzględnego.",
         "tags": "Ground State Phase Diagram, Falicov-Kimball Model, Lattice Physics",
         "created_at": "1993-01-01T00:00:00Z",
-        "url": "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.48.10783"
+        "url": "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.48.10783",
+        "coauthors": [
+            "J. Lach",
+            "J. Jędrzejewski"
+        ]
     },
     {
         "title": "The one-dimensional spinless Falicov-Kimball model with periodic configurations of localized electrons",
@@ -517,7 +692,11 @@ const papersData = [
         "polish_about": "Badanie tego, jak krystalizacja i przejście między stanem metalicznym a izolacyjnym zachodzą, gdy symetria cząstka-dziura jest złamana.",
         "tags": "Crystallization, Metal-Insulator Transition, Spinless FKM, Ground State",
         "created_at": "1989-01-01T00:00:00Z",
-        "url": "https://www.sciencedirect.com/science/article/abs/pii/037843718990263X"
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/037843718990263X",
+        "coauthors": [
+            "J. Jędrzejewski",
+            "J. Lach"
+        ]
     },
     {
         "title": "Crystallization and metal-insulator transition in an itinerant electron system",
@@ -527,7 +706,11 @@ const papersData = [
         "polish_about": "Badania nad tym, jak swobodnie poruszające się elektrony mogą organizować się w różne struktury krystaliczne, w których układ jest przewodnikiem lub izolatorem.",
         "tags": "Crystallization, Metal-Insulator Transition, Itinerant Electrons, Phase Transition",
         "created_at": "1989-01-01T00:00:00Z",
-        "url": "https://www.sciencedirect.com/science/article/abs/pii/0375960189906439?via%3Dihub"
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/0375960189906439?via%3Dihub",
+        "coauthors": [
+            "J. Jędrzejewski",
+            "J. Lach"
+        ]
     },
     {
         "title": "Magnetic properties of UBr3",
@@ -537,7 +720,10 @@ const papersData = [
         "polish_about": "Teoretyczna analiza własności magnetycznych trójbromku uranu.",
         "tags": "UBr3, Magnetism, Actinides",
         "created_at": "1987-01-01T00:00:00Z",
-        "url": "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.36.8570"
+        "url": "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.36.8570",
+        "coauthors": [
+            "Paul Erdős"
+        ]
     },
     {
         "title": "Connection between the thermodynamic potential and the interaction function for systems with bilinear Hamiltonians in molecular field approximation",
@@ -557,7 +743,10 @@ const papersData = [
         "polish_about": "Badanie tego, jak warstwa powierzchniowa kryształu wpływa na jego porządek strukturalny w miarę zbliżania się do temperatury topnienia.",
         "tags": "Surface Layer, Crystal Ordering, Melting Point, Solid State Physics",
         "created_at": "1983-01-01T00:00:00Z",
-        "url": "ActaPhysPolA64p413r1983_compressed.pdf"
+        "url": "ActaPhysPolA64p413r1983_compressed.pdf",
+        "coauthors": [
+            "A.Z. Patashinskii"
+        ]
     },
     {
         "title": "Theory of inhomogeneous crystal ordering",
@@ -567,6 +756,10 @@ const papersData = [
         "polish_about": "Opracowanie ram teoretycznych do zrozumienia jak kryształy tworzą niejednorodne uporządkowanie strukturalne.",
         "tags": "Crystal Ordering, Inhomogeneous Structures, Theoretical Physics",
         "created_at": "1981-01-01T00:00:00Z",
-        "url": "https://jetp.ras.ru/cgi-bin/dn/e_054_06_1168.pdf"
+        "url": "https://jetp.ras.ru/cgi-bin/dn/e_054_06_1168.pdf",
+        "coauthors": [
+            "A.Ya. Mitus",
+            "A.Z. Patashinskii"
+        ]
     }
 ];

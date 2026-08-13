@@ -100,6 +100,18 @@
       font-size: 0.8rem;
     }
 
+    .institute-logo {
+      height: 1.6em;
+      width: auto;
+      vertical-align: -0.45em;
+      margin: 0 0.15em;
+      transition: transform 0.2s ease;
+    }
+
+    .institute-logo:hover {
+      transform: scale(1.12);
+    }
+
     .profile-photo {
       border: 4px solid white;
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
@@ -229,6 +241,7 @@
         readMore: "Read Publication",
         abstract: "Abstract",
         summary: "About this paper",
+        coauthors: "Co-authors",
         searchPlaceholder: "Search by title, tags, or content..."
       },
       pl: {
@@ -240,6 +253,7 @@
         readMore: "Czytaj publikację",
         abstract: "Abstrakt",
         summary: "O tej pracy",
+        coauthors: "Współautorzy",
         searchPlaceholder: "Szukaj po tytule, tagach lub treści..."
       }
     };
@@ -256,7 +270,7 @@
       document.getElementById('search-input').placeholder = translations[lang].searchPlaceholder;
 
       // Update About Me content
-      document.getElementById('about-content').textContent = aboutMeData[lang];
+      document.getElementById('about-content').innerHTML = aboutMeData[lang];
 
       // Render papers
       renderPapers();
@@ -272,10 +286,12 @@
         const abstract = paper.abstract.toLowerCase();
         const tags = paper.tags.toLowerCase();
         const aboutText = (currentLang === 'pl' ? paper.polish_about : paper.english_about).toLowerCase();
+        const coauthors = (paper.coauthors || []).join(', ').toLowerCase();
 
         return title.includes(searchQuery) ||
           abstract.includes(searchQuery) ||
           tags.includes(searchQuery) ||
+          coauthors.includes(searchQuery) ||
           aboutText.includes(searchQuery);
       });
 
@@ -287,6 +303,10 @@
         const tagsHtml = paper.tags.split(',')
           .map(tag => `<span class="tag is-light">${tag.trim()}</span>`)
           .join('');
+
+        const coauthorsHtml = (paper.coauthors && paper.coauthors.length)
+          ? `<p class="is-size-6 has-text-grey mb-3"><strong>${translations[currentLang].coauthors}:</strong> ${paper.coauthors.join(', ')}</p>`
+          : '';
 
         const isExternal = paper.url.startsWith('http://') || paper.url.startsWith('https://') || paper.url.startsWith('//');
         let paperUrl = paper.url;
@@ -312,6 +332,7 @@
                                     <div class="column is-9">
                                         <p class="title is-4 mb-2" style="color: var(--dark-purple);">${paper.title}</p>
                                       <!---  <p class="subtitle is-6 has-text-grey mb-3">${translations[currentLang].published}: ${formattedDate}</p> -->
+                                        ${coauthorsHtml}
                                         <div class="tags mb-3">${tagsHtml}</div>
                                         <p class="is-size-6 italic mb-4"><strong>${translations[currentLang].summary}:</strong> ${aboutText}</p>
                                         <details class="mb-4">
