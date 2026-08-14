@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Romuald Lemański</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css">
   <style>
     :root {
       --dark-purple: #63307c;
@@ -100,6 +101,41 @@
       font-size: 0.8rem;
     }
 
+    .collaborator-card {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      background-color: #FFFFFF;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+      padding: 0.85rem 1rem;
+      height: 100%;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .collaborator-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+    }
+
+    .collaborator-card .fi {
+      flex-shrink: 0;
+      font-size: 1.6rem;
+      border-radius: 3px;
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+    }
+
+    .collaborator-card a {
+      color: var(--text-dark);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .collaborator-card a:hover {
+      color: var(--dark-purple);
+      text-decoration: underline;
+    }
+
     .institute-logo {
       height: 1.6em;
       width: auto;
@@ -171,6 +207,7 @@
         <div class="navbar-start">
           <a class="navbar-item nav-link" data-target="about-section" id="nav-about">About Me</a>
           <a class="navbar-item nav-link" data-target="publications-section" id="nav-publications">Publications</a>
+          <a class="navbar-item nav-link" data-target="collaborators-section" id="nav-collaborators">Collaborators</a>
         </div>
 
         <div class="navbar-end">
@@ -215,6 +252,13 @@
         <div id="papers-container" class="columns is-multiline"></div>
       </div>
     </section>
+
+    <section id="collaborators-section" class="section content-section is-hidden">
+      <div class="container">
+        <h2 class="title is-2 section-title" id="collaborators-title">Collaborators</h2>
+        <div id="collaborators-container" class="columns is-multiline"></div>
+      </div>
+    </section>
   </main>
 
   <footer class="footer mt-6">
@@ -227,6 +271,7 @@
 
   <script src="papers.js"></script>
   <script src="data.js"></script>
+  <script src="collaborators.js"></script>
 
   <script>
     let currentLang = 'en';
@@ -235,8 +280,10 @@
       en: {
         navAbout: "About Me",
         navPubs: "Publications",
+        navCollaborators: "Collaborators",
         aboutTitle: "About Me",
         pubsTitle: "Publications",
+        collaboratorsTitle: "Collaborators",
         published: "Published",
         readMore: "Read Publication",
         abstract: "Abstract",
@@ -247,8 +294,10 @@
       pl: {
         navAbout: "O mnie",
         navPubs: "Publikacje",
+        navCollaborators: "Współpracownicy",
         aboutTitle: "O mnie",
         pubsTitle: "Publikacje",
+        collaboratorsTitle: "Współpracownicy",
         published: "Opublikowano",
         readMore: "Czytaj publikację",
         abstract: "Abstrakt",
@@ -265,8 +314,10 @@
       // Update UI text
       document.getElementById('nav-about').textContent = translations[lang].navAbout;
       document.getElementById('nav-publications').textContent = translations[lang].navPubs;
+      document.getElementById('nav-collaborators').textContent = translations[lang].navCollaborators;
       document.getElementById('about-title').textContent = translations[lang].aboutTitle;
       document.getElementById('publications-title').textContent = translations[lang].pubsTitle;
+      document.getElementById('collaborators-title').textContent = translations[lang].collaboratorsTitle;
       document.getElementById('search-input').placeholder = translations[lang].searchPlaceholder;
 
       // Update About Me content
@@ -351,6 +402,36 @@
         container.innerHTML += cardHTML;
       });
     }
+
+    // Collaborators
+    function renderCollaborators() {
+      const container = document.getElementById('collaborators-container');
+      if (!container) return;
+      container.innerHTML = '';
+
+      const sorted = [...collaboratorsData].sort((a, b) => a.name.localeCompare(b.name));
+
+      sorted.forEach(collaborator => {
+        const flagHtml = collaborator.nationality
+          ? `<span class="fi fi-${collaborator.nationality.toLowerCase()}"></span>`
+          : '';
+        const nameHtml = collaborator.webpage
+          ? `<a href="${collaborator.webpage}" target="_blank" rel="noopener">${collaborator.name}</a>`
+          : `<span>${collaborator.name}</span>`;
+
+        const cardHTML = `
+                    <div class="column is-4-desktop is-6-tablet is-12-mobile">
+                        <div class="collaborator-card">
+                            ${flagHtml}
+                            ${nameHtml}
+                        </div>
+                    </div>
+                `;
+        container.innerHTML += cardHTML;
+      });
+    }
+
+    renderCollaborators();
 
     // Search logic
     document.getElementById('search-input').addEventListener('input', renderPapers);
