@@ -166,7 +166,7 @@ const collaboratorsData = [
     },
     {
         "name": "G.I. Watson",
-        "nationality": "gb",
+        "nationality": "au",
         "webpage": "https://arxiv.org/abs/cond-mat/9608155"
     },
     {
@@ -180,8 +180,8 @@ const collaboratorsData = [
         "webpage": "https://en.wikipedia.org/wiki/Alexander_Patashinski"
     },
     {
-        "name": "A.Ya. Mitus",
+        "name": "A.C. Mituś",
         "nationality": "pl",
-        "webpage": "https://orcid.org/0000-0002-9680-0838"
+        "webpage": "https://wppt.pwr.edu.pl/pracownicy/profil.html?name=antonimitus-381"
     }
 ];
