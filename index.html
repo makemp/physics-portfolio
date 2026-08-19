@@ -208,6 +208,7 @@
           <a class="navbar-item nav-link" data-target="about-section" id="nav-about">About Me</a>
           <a class="navbar-item nav-link" data-target="publications-section" id="nav-publications">Publications</a>
           <a class="navbar-item nav-link" data-target="collaborators-section" id="nav-collaborators">Collaborators</a>
+          <a class="navbar-item" id="nav-contact" href="https://www.intibs.pl/o-instytucie/pracownicy.html?view=worker&surname=&group=OTM&id=80" target="_blank" rel="noopener">Contact Page</a>
         </div>
 
         <div class="navbar-end">
@@ -281,6 +282,7 @@
         navAbout: "About Me",
         navPubs: "Publications",
         navCollaborators: "Collaborators",
+        navContact: "Contact Page",
         aboutTitle: "About Me",
         pubsTitle: "Publications",
         collaboratorsTitle: "Collaborators",
@@ -295,6 +297,7 @@
         navAbout: "O mnie",
         navPubs: "Publikacje",
         navCollaborators: "Współpracownicy",
+        navContact: "Strona kontaktowa",
         aboutTitle: "O mnie",
         pubsTitle: "Publikacje",
         collaboratorsTitle: "Współpracownicy",
@@ -315,6 +318,7 @@
       document.getElementById('nav-about').textContent = translations[lang].navAbout;
       document.getElementById('nav-publications').textContent = translations[lang].navPubs;
       document.getElementById('nav-collaborators').textContent = translations[lang].navCollaborators;
+      document.getElementById('nav-contact').textContent = translations[lang].navContact;
       document.getElementById('about-title').textContent = translations[lang].aboutTitle;
       document.getElementById('publications-title').textContent = translations[lang].pubsTitle;
       document.getElementById('collaborators-title').textContent = translations[lang].collaboratorsTitle;
@@ -471,6 +475,11 @@
     // Language toggle logic
     document.getElementById('language-toggle').addEventListener('click', () => {
       setLanguage(currentLang === 'en' ? 'pl' : 'en');
+      closeMenu();
+    });
+
+    // Contact page link (opens externally, just close mobile menu)
+    document.getElementById('nav-contact').addEventListener('click', () => {
       closeMenu();
     });
 
