@@ -53,6 +53,15 @@
       font-weight: bold;
     }
 
+    .navbar-item.scholar-link {
+      color: #E8C547 !important;
+    }
+
+    .navbar-item.scholar-link:hover {
+      background-color: rgba(232, 197, 71, 0.15) !important;
+      color: #FFD700 !important;
+    }
+
     .footer {
       background-color: var(--dark-purple);
       color: white;
@@ -209,6 +218,7 @@
           <a class="navbar-item nav-link" data-target="publications-section" id="nav-publications">Publications</a>
           <a class="navbar-item nav-link" data-target="collaborators-section" id="nav-collaborators">Collaborators</a>
           <a class="navbar-item" id="nav-contact" href="https://www.intibs.pl/o-instytucie/pracownicy.html?view=worker&surname=&group=OTM&id=80" target="_blank" rel="noopener">Contact Page</a>
+          <a class="navbar-item scholar-link" id="nav-scholar" href="https://scholar.google.com/citations?hl=pl&user=KloPrJAAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener">Google Scholar</a>
         </div>
 
         <div class="navbar-end">
@@ -283,6 +293,7 @@
         navPubs: "Publications",
         navCollaborators: "Collaborators",
         navContact: "Contact Page",
+        navScholar: "Google Scholar",
         aboutTitle: "About Me",
         pubsTitle: "Publications",
         collaboratorsTitle: "Collaborators",
@@ -298,6 +309,7 @@
         navPubs: "Publikacje",
         navCollaborators: "Współpracownicy",
         navContact: "Strona kontaktowa",
+        navScholar: "Google Scholar",
         aboutTitle: "O mnie",
         pubsTitle: "Publikacje",
         collaboratorsTitle: "Współpracownicy",
@@ -319,6 +331,7 @@
       document.getElementById('nav-publications').textContent = translations[lang].navPubs;
       document.getElementById('nav-collaborators').textContent = translations[lang].navCollaborators;
       document.getElementById('nav-contact').textContent = translations[lang].navContact;
+      document.getElementById('nav-scholar').textContent = translations[lang].navScholar;
       document.getElementById('about-title').textContent = translations[lang].aboutTitle;
       document.getElementById('publications-title').textContent = translations[lang].pubsTitle;
       document.getElementById('collaborators-title').textContent = translations[lang].collaboratorsTitle;
@@ -480,6 +493,11 @@
 
     // Contact page link (opens externally, just close mobile menu)
     document.getElementById('nav-contact').addEventListener('click', () => {
+      closeMenu();
+    });
+
+    // Google Scholar link (opens externally, just close mobile menu)
+    document.getElementById('nav-scholar').addEventListener('click', () => {
       closeMenu();
     });
 
